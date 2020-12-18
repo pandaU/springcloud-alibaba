@@ -1,0 +1,26 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pandau.cloud.mapper.PayMapper">
+    <insert id="create" useGeneratedKeys="true" keyProperty="id">
+                INSERT INTO payment(serial) VALUES(#{serial})
+    </insert>
+    <resultMap id="baseMap" type="com.pandau.cloud.entities.PayInfo">
+        <id column="id" property="id"/>
+        <result column="serial" property="serial"/>
+    </resultMap>
+    <select id="getById" resultMap="baseMap">
+             SELECT  id,serial FROM payment WHERE id =#{id}
+    </select>
+    <update id="updateDelFlag">
+        update base_unit_info
+        <set>
+            <if test='BaseUnitInfo.updateBy!=null '>UPADATE_BY = #{BaseUnitInfo.updateBy},</if>
+            <if test='BaseUnitInfo.updateTime != null '>UPDATE_TIME = #{BaseUnitInfo.updateTime},</if>
+            <if test='BaseUnitInfo.delFlag != null'>DEL_FLAG = #{BaseUnitInfo.delFlag}</if>
+        </set>
+        <where>
+            <if test='BaseUnitInfo.unitCode != null'> unit_code = ${BaseUnitInfo.unitCode}</if>
+        </where>
+    </update>
+</mapper>
