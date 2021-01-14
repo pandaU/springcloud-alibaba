@@ -1,0 +1,12 @@
+server:
+  port: 8801
+spring:
+  application:
+    name: order_8801
+  profiles:
+    active: dev
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
