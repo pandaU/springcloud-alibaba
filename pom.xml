@@ -17,9 +17,9 @@
     <module>cloud_pay_8004</module>
       <module>cloud-hystrix-pay_8009</module>
     <module>zip-kinServer</module>
-      <module>nacos-order8801</module>
       <module>cloud-nacos-pay8802</module>
     <module>cloud-nacos-pay8803</module>
+    <module>seata-bus</module>
   </modules>
   <packaging>pom</packaging>
   <properties>

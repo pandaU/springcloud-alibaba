@@ -57,7 +57,8 @@ public class OrderController {
     @GetMapping(value = "/test")
     @SentinelResource(value = "test",
             blockHandlerClass = CustomerBlockHandler.class,
-            blockHandler = "myBlockHandler1")
+            blockHandler = "myBlockHandler1"
+    )
     public String test() {
         UrlCleaner cleaner = WebCallbackManager.getUrlCleaner();
         return cleaner.clean("http://172.16.8.74:8801/cloud/cousmer/echo/1213");
