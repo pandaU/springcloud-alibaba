@@ -8,11 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-order_80" />
+        <module name="shardingsphere-seata-business" />
         <module name="seata-bus" />
         <module name="cloud-nacos-order8801" />
         <module name="cloud_pay_8004" />
         <module name="cloud_pay_8002" />
         <module name="cloud_pay_8001" />
+        <module name="shardingsphere-seata-order" />
         <module name="cloud-hystrix-pay_8009" />
         <module name="cloud-common" />
         <module name="cloud-eureka-server_70001" />

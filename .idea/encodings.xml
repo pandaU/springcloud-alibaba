@@ -27,6 +27,10 @@
     <file url="file://$PROJECT_DIR$/cloud_pay_8004/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/seata-bus/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/seata-bus/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-shardingshre/shardingsphere-seata-business/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-shardingshre/shardingsphere-seata-business/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-shardingshre/shardingsphere-seata-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-shardingshre/shardingsphere-seata-order/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zip-kinServer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zip-kinServer/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

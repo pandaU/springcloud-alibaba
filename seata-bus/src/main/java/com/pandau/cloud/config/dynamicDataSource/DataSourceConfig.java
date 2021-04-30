@@ -33,14 +33,15 @@ public class DataSourceConfig {
 
     @Primary
     @Bean(name = "masterDataSource")
+    @ConfigurationProperties(prefix = "spring.master.datasource")
     public DataSource getDateSource1() throws SQLException {
         DruidDataSource druidDataSource = new DruidDataSource();
-        druidDataSource.setUsername(masterProperties.getUsername());
+        /*druidDataSource.setUsername(masterProperties.getUsername());
         druidDataSource.setPassword(masterProperties.getPassword());
         druidDataSource.setUrl(masterProperties.getUrl());
         druidDataSource.setFilters("stat,wall");
         druidDataSource.setUseGlobalDataSourceStat(true);
-        druidDataSource.setDriverClassName(masterProperties.getDriverClassName());
+        druidDataSource.setDriverClassName(masterProperties.getDriverClassName());*/
         return druidDataSource;
     }
     @Bean(name = "slaveDataSource")

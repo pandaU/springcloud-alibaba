@@ -20,6 +20,7 @@
       <module>cloud-nacos-pay8802</module>
     <module>cloud-nacos-pay8803</module>
     <module>seata-bus</module>
+      <module>seata-shardingshre</module>
   </modules>
   <packaging>pom</packaging>
   <properties>
