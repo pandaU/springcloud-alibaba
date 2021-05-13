@@ -11,6 +11,8 @@ public class IOrderServiceMockImpl extends ServiceImpl<OrderMapper, OrderEntity>
     public String insertOrder(OrderEntity orderEntity) {
         System.out.println("OrderService RpcException");
         System.out.println("haha");
+        System.out.println("dsdsd");
+        System.out.println("发版");
         return "fail";
     }
 }
