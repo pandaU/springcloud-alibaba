@@ -11,6 +11,6 @@ public class SeataConfig {
         /**
          * 以下参数为是无效参数,具体可以查看该类源码
          */
-        return new GlobalTransactionScanner("raw-jdbc-business","raw-jdbc-group");
+        return new GlobalTransactionScanner("raw-jdbc-order","raw-jdbc-group");
     }
 }

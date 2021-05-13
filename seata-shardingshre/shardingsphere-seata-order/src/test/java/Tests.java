@@ -16,7 +16,7 @@ public class Tests {
     @Test
     public void contextLoads() {
         OrderEntity orderEntity = new OrderEntity();
-        orderEntity.setOrderId(123);
+        //orderEntity.setOrderId(123);
         orderEntity.setStatus("seata");
         orderEntity.setUserId(123);
         iOrderService.insertOrder(orderEntity);

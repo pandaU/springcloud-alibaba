@@ -31,7 +31,7 @@ public final class OrderEntity implements Serializable {
     @TableId(value = "id", type = IdType.ID_WORKER_STR)
     private String id;
     @TableId(value = "order_id")
-    private long orderId;
+    private Long orderId;
     @TableId(value = "user_id")
     private int userId;
     @TableId(value = "status")

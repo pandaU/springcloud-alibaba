@@ -10,6 +10,8 @@ import org.apache.shardingsphere.transaction.core.TransactionType;
 import org.apache.shardingsphere.transaction.core.TransactionTypeHolder;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class BusinessServiceImpl implements IBusinessService {
 
@@ -21,12 +23,12 @@ public class BusinessServiceImpl implements IBusinessService {
     public void purchase(){
         TransactionTypeHolder.set(TransactionType.BASE);
         OrderEntity orderEntity = new OrderEntity();
-        orderEntity.setOrderId(123);
-        orderEntity.setStatus("seata");
+        //orderEntity.setOrderId(123);
+        //orderEntity.setStatus("seata");
         orderEntity.setUserId(123);
         String ok = orderService.insertOrder(orderEntity);
         System.out.println(ok);
         System.out.println("XID:"+ RootContext.getXID());
-        throw new RuntimeException("回滚测试");
+        //throw new RuntimeException("回滚测试");
     }
 }

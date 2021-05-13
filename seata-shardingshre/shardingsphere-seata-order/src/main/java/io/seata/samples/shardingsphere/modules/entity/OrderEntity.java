@@ -28,20 +28,20 @@ import java.io.Serializable;
 public final class OrderEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id", type = IdType.ID_WORKER_STR)
+    @TableId(value = "id", type = IdType.UUID)
     private String id;
     @TableId(value = "order_id")
-    private long orderId;
+    private Long orderId;
     @TableId(value = "user_id")
     private int userId;
     @TableId(value = "status")
     private String status;
 
-    public long getOrderId() {
+    public Long getOrderId() {
         return orderId;
     }
 
-    public void setOrderId(long orderId) {
+    public void setOrderId(Long orderId) {
         this.orderId = orderId;
     }
 
